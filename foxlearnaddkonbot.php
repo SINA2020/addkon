@@ -1,8 +1,8 @@
 ﻿<?php
 
-define('API_KEY',"توکن");
-$Dev = 00000000;
-$userbot = "testbot"; //نام کاربری ربات
+define('API_KEY',"341781610:AAGgQdlP7ozJ5p2V-OnJrWPhPhNR-Y_vrW8");
+$Dev = 284438374;
+$userbot = "@addmember_lbot"; //نام کاربری ربات
 ///---------------------------
 
 function Poker($method,$datas=[]){
@@ -40,7 +40,7 @@ $fm = $update->callback_query->from->id;
 $data = $update->callback_query->data;
 $messageid = $update->callback_query->message->message_id;
 $token = API_KEY;
-$userchanel = "foxlearnir"; //آی دی کاتال
+$userchanel = "Usx59"; //آی دی کاتال
 $forchaneel = json_decode(file_get_contents("https://api.telegram.org/bot".$token."/getChatMember?chat_id=@".$userchanel."&user_id=".$from_id));
 $tch = $forchaneel->result->status;
 $stat = file_get_contents("https://api.telegram.org/bot$token/getChatMember?chat_id=$chat_id&user_id=".$from_id);
@@ -103,7 +103,7 @@ if ($tch !='member' && $tch != 'creator' && $tch !='administrator' && $tc == "pr
     Poker('sendmessage',[
         "chat_id"=>$chat_id,
         "text"=>"دوست عزیز برای استفاده از ربات و همچنین حمایت از ما باید عضو کانال شوید ⚠️
-⭕️ @$userchanel
+⭕️ @$Usx59
 و بعد از عضویت /start رو مجددا ارسال کنید",
         'reply_to_message_id'=>$message_id,
     ]);
