@@ -1,8 +1,8 @@
 ﻿<?php
 
-define('API_KEY',"توکن");
-$Dev = 00000000;
-$userbot = "testbot"; //نام کاربری ربات
+define('API_KEY',341781610:AAGgQdlP7ozJ5p2V-OnJrWPhPhNR-Y_vrW8);
+$Dev = 284438374;
+$userbot = @addmember_lbot; //نام کاربری ربات
 ///---------------------------
 
 function Poker($method,$datas=[]){
